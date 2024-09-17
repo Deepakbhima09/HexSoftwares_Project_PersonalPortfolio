@@ -1,0 +1,98 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: black;
+    overflow-x: hidden; 
+}
+
+.navbar {
+    width: 100%;
+    background-color: #333; 
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.navbar a:hover {
+    background-color: #555; 
+    border-radius: 5px;
+}
+
+.about {
+    padding-top: 60px; /* Offset for fixed navbar */
+    height: calc(100vh - 60px); /* Full viewport height minus navbar height */
+    width: 100vw; /* Full viewport width */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+.about-me-container {
+    display: flex;
+    padding: 70px;
+    color: #fff;
+    border-radius: 15px; /* Adjust border-radius for a rounded look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #f4f4f4; /* Light background for content */
+    max-width: 100%; /* Full width of the viewport */
+    max-height: 100%; /* Full height of the viewport */
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.about-me-photo {
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+.about-me-content {
+    width: 70%;
+    max-width: 800px;
+}
+
+.about-me-content h1 {
+    margin-top: 0;
+    font-size: 30px;
+    color: #333; /* Dark color for text */
+}
+
+.about-me-content p {
+    margin: 20px 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #333; /* Dark color for text */
+    line-height: 1.6;
+}
+
+.about-me-container span {
+    color: rgb(230, 104, 59);
+}

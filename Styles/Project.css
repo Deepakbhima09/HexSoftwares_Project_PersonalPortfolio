@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.content {
+    margin-top: 70px; /* Adjust margin to account for the fixed navbar height */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+}
+
+.projects-container {
+    width: 100%;
+    max-width: 1200px; /* Max width to ensure content does not stretch too wide */
+}
+
+.projects-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 65px;
+    margin-bottom: 40px;
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px; /* Keep distance from the top */
+    left: 20px; /* Align to the left */
+    z-index: 1;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+}
+
+.project-card {
+    margin-top: 100px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 400px;
+    width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.project-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #004d40;
+}
+
+.project-info p {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.project-info a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project-info a:hover {
+    background-color: #004d40;
+}
